@@ -1,0 +1,289 @@
+state,Year,category,value
+Johor,2022,lf_employed,1780.7
+Kedah,2022,lf_employed,997.3
+Kelantan,2022,lf_employed,757.3
+Melaka,2022,lf_employed,439.5
+Negeri Sembilan,2022,lf_employed,493.3
+Pahang,2022,lf_employed,732.4
+Perak,2022,lf_employed,1085.6
+Perlis,2022,lf_employed,111.4
+Pulau Pinang,2022,lf_employed,894.6
+Sabah,2022,lf_employed,1871.1
+Sarawak,2022,lf_employed,1395.0
+Selangor,2022,lf_employed,3597.5
+Terengganu,2022,lf_employed,476.3
+Kuala Lumpur,2022,lf_employed,859.5
+Labuan,2022,lf_employed,47.0
+Putrajaya,2022,lf_employed,36.2
+Johor,2021,lf_employed,1722.6
+Kedah,2021,lf_employed,940.3
+Kelantan,2021,lf_employed,667.8
+Melaka,2021,lf_employed,420.8
+Negeri Sembilan,2021,lf_employed,479.5
+Pahang,2021,lf_employed,706.9
+Perak,2021,lf_employed,1038.9
+Perlis,2021,lf_employed,105.0
+Pulau Pinang,2021,lf_employed,876.4
+Sabah,2021,lf_employed,1839.4
+Sarawak,2021,lf_employed,1301.5
+Selangor,2021,lf_employed,3708.5
+Terengganu,2021,lf_employed,474.2
+Kuala Lumpur,2021,lf_employed,874.1
+Labuan,2021,lf_employed,45.5
+Putrajaya,2021,lf_employed,35.4
+Johor,2020,lf_employed,1714.4
+Kedah,2020,lf_employed,946.2
+Kelantan,2020,lf_employed,702.0
+Melaka,2020,lf_employed,438.9
+Negeri Sembilan,2020,lf_employed,491.0
+Pahang,2020,lf_employed,733.7
+Perak,2020,lf_employed,1063.7
+Perlis,2020,lf_employed,112.0
+Pulau Pinang,2020,lf_employed,850.7
+Sabah,2020,lf_employed,1990.9
+Sarawak,2020,lf_employed,1309.1
+Selangor,2020,lf_employed,3443.8
+Terengganu,2020,lf_employed,487.1
+Kuala Lumpur,2020,lf_employed,877.2
+Labuan,2020,lf_employed,44.4
+Putrajaya,2020,lf_employed,38.5
+Johor,2019,lf_employed,1743.2
+Kedah,2019,lf_employed,928.5
+Kelantan,2019,lf_employed,685.7
+Melaka,2019,lf_employed,418.6
+Negeri Sembilan,2019,lf_employed,488.0
+Pahang,2019,lf_employed,717.5
+Perak,2019,lf_employed,1044.7
+Perlis,2019,lf_employed,108.1
+Pulau Pinang,2019,lf_employed,829.4
+Sabah,2019,lf_employed,1926.2
+Sarawak,2019,lf_employed,1334.1
+Selangor,2019,lf_employed,3412.1
+Terengganu,2019,lf_employed,463.7
+Kuala Lumpur,2019,lf_employed,833.1
+Labuan,2019,lf_employed,40.7
+Putrajaya,2019,lf_employed,36.6
+Johor,2018,lf_employed,1691.7
+Kedah,2018,lf_employed,915.8
+Kelantan,2018,lf_employed,695.3
+Melaka,2018,lf_employed,418.3
+Negeri Sembilan,2018,lf_employed,499.2
+Pahang,2018,lf_employed,715.2
+Perak,2018,lf_employed,1010.0
+Perlis,2018,lf_employed,104.6
+Pulau Pinang,2018,lf_employed,830.9
+Sabah,2018,lf_employed,1830.1
+Sarawak,2018,lf_employed,1245.7
+Selangor,2018,lf_employed,3363.1
+Terengganu,2018,lf_employed,446.1
+Kuala Lumpur,2018,lf_employed,837.5
+Labuan,2018,lf_employed,42.0
+Putrajaya,2018,lf_employed,37.9
+Johor,2017,lf_employed,1634.6
+Kedah,2017,lf_employed,910.8
+Kelantan,2017,lf_employed,669.9
+Melaka,2017,lf_employed,406.4
+Negeri Sembilan,2017,lf_employed,459.7
+Pahang,2017,lf_employed,697.2
+Perak,2017,lf_employed,1006.6
+Perlis,2017,lf_employed,98.6
+Pulau Pinang,2017,lf_employed,835.3
+Sabah,2017,lf_employed,1794.8
+Sarawak,2017,lf_employed,1279.6
+Selangor,2017,lf_employed,3223.1
+Terengganu,2017,lf_employed,447.2
+Kuala Lumpur,2017,lf_employed,817.2
+Labuan,2017,lf_employed,39.4
+Putrajaya,2017,lf_employed,35.5
+Johor,2022,lf_unemployed,58.6
+Kedah,2022,lf_unemployed,35.2
+Kelantan,2022,lf_unemployed,30.6
+Melaka,2022,lf_unemployed,13.6
+Negeri Sembilan,2022,lf_unemployed,16.7
+Pahang,2022,lf_unemployed,18.4
+Perak,2022,lf_unemployed,42.7
+Perlis,2022,lf_unemployed,3.9
+Pulau Pinang,2022,lf_unemployed,30.1
+Sabah,2022,lf_unemployed,188.3
+Sarawak,2022,lf_unemployed,45.7
+Selangor,2022,lf_unemployed,118.1
+Terengganu,2022,lf_unemployed,22.6
+Kuala Lumpur,2022,lf_unemployed,42.9
+Labuan,2022,lf_unemployed,3.5
+Putrajaya,2022,lf_unemployed,0.3
+Johor,2021,lf_unemployed,70.8
+Kedah,2021,lf_unemployed,35.2
+Kelantan,2021,lf_unemployed,30.5
+Melaka,2021,lf_unemployed,15.7
+Negeri Sembilan,2021,lf_unemployed,18.7
+Pahang,2021,lf_unemployed,26.7
+Perak,2021,lf_unemployed,49.5
+Perlis,2021,lf_unemployed,5.8
+Pulau Pinang,2021,lf_unemployed,32.1
+Sabah,2021,lf_unemployed,180.2
+Sarawak,2021,lf_unemployed,64.2
+Selangor,2021,lf_unemployed,173.2
+Terengganu,2021,lf_unemployed,18.3
+Kuala Lumpur,2021,lf_unemployed,45.5
+Labuan,2021,lf_unemployed,4.5
+Putrajaya,2021,lf_unemployed,0.9
+Johor,2020,lf_unemployed,57.5
+Kedah,2020,lf_unemployed,36.0
+Kelantan,2020,lf_unemployed,30.4
+Melaka,2020,lf_unemployed,5.5
+Negeri Sembilan,2020,lf_unemployed,16.8
+Pahang,2020,lf_unemployed,23.1
+Perak,2020,lf_unemployed,46.2
+Perlis,2020,lf_unemployed,4.2
+Pulau Pinang,2020,lf_unemployed,18.0
+Sabah,2020,lf_unemployed,143.0
+Sarawak,2020,lf_unemployed,44.7
+Selangor,2020,lf_unemployed,80.1
+Terengganu,2020,lf_unemployed,16.7
+Kuala Lumpur,2020,lf_unemployed,23.1
+Labuan,2020,lf_unemployed,1.1
+Putrajaya,2020,lf_unemployed,0.1
+Johor,2019,lf_unemployed,49.3
+Kedah,2019,lf_unemployed,28.3
+Kelantan,2019,lf_unemployed,31.4
+Melaka,2019,lf_unemployed,7.1
+Negeri Sembilan,2019,lf_unemployed,15.0
+Pahang,2019,lf_unemployed,21.9
+Perak,2019,lf_unemployed,44.1
+Perlis,2019,lf_unemployed,5.7
+Pulau Pinang,2019,lf_unemployed,16.2
+Sabah,2019,lf_unemployed,107.2
+Sarawak,2019,lf_unemployed,46.1
+Selangor,2019,lf_unemployed,102.7
+Terengganu,2019,lf_unemployed,19.4
+Kuala Lumpur,2019,lf_unemployed,19.4
+Labuan,2019,lf_unemployed,2.0
+Putrajaya,2019,lf_unemployed,0.6
+Johor,2018,lf_unemployed,48.6
+Kedah,2018,lf_unemployed,28.2
+Kelantan,2018,lf_unemployed,28.9
+Melaka,2018,lf_unemployed,3.7
+Negeri Sembilan,2018,lf_unemployed,16.3
+Pahang,2018,lf_unemployed,19.8
+Perak,2018,lf_unemployed,46.3
+Perlis,2018,lf_unemployed,2.6
+Pulau Pinang,2018,lf_unemployed,15.8
+Sabah,2018,lf_unemployed,128.5
+Sarawak,2018,lf_unemployed,42.2
+Selangor,2018,lf_unemployed,77.8
+Terengganu,2018,lf_unemployed,22.4
+Kuala Lumpur,2018,lf_unemployed,24.3
+Labuan,2018,lf_unemployed,3.0
+Putrajaya,2018,lf_unemployed,0.4
+Johor,2017,lf_unemployed,51.2
+Kedah,2017,lf_unemployed,23.6
+Kelantan,2017,lf_unemployed,23.8
+Melaka,2017,lf_unemployed,5.8
+Negeri Sembilan,2017,lf_unemployed,16.4
+Pahang,2017,lf_unemployed,18.6
+Perak,2017,lf_unemployed,45.2
+Perlis,2017,lf_unemployed,2.6
+Pulau Pinang,2017,lf_unemployed,13.6
+Sabah,2017,lf_unemployed,105.0
+Sarawak,2017,lf_unemployed,42.6
+Selangor,2017,lf_unemployed,113.4
+Terengganu,2017,lf_unemployed,19.8
+Kuala Lumpur,2017,lf_unemployed,28.9
+Labuan,2017,lf_unemployed,3.2
+Putrajaya,2017,lf_unemployed,0.5
+Johor,2022,lf_outside,834.1
+Kedah,2022,lf_outside,536.7
+Kelantan,2022,lf_outside,493.2
+Melaka,2022,lf_outside,210.6
+Negeri Sembilan,2022,lf_outside,273.7
+Pahang,2022,lf_outside,397.2
+Perak,2022,lf_outside,591.7
+Perlis,2022,lf_outside,62.9
+Pulau Pinang,2022,lf_outside,375.9
+Sabah,2022,lf_outside,983.5
+Sarawak,2022,lf_outside,602.9
+Selangor,2022,lf_outside,1231.9
+Terengganu,2022,lf_outside,348.1
+Kuala Lumpur,2022,lf_outside,308.2
+Labuan,2022,lf_outside,24.0
+Putrajaya,2022,lf_outside,15.4
+Johor,2021,lf_outside,846.6
+Kedah,2021,lf_outside,569.1
+Kelantan,2021,lf_outside,562.0
+Melaka,2021,lf_outside,217.7
+Negeri Sembilan,2021,lf_outside,282.3
+Pahang,2021,lf_outside,407.9
+Perak,2021,lf_outside,625.2
+Perlis,2021,lf_outside,66.3
+Pulau Pinang,2021,lf_outside,375.8
+Sabah,2021,lf_outside,971.8
+Sarawak,2021,lf_outside,657.9
+Selangor,2021,lf_outside,1047.4
+Terengganu,2021,lf_outside,335.8
+Kuala Lumpur,2021,lf_outside,310.0
+Labuan,2021,lf_outside,24.6
+Putrajaya,2021,lf_outside,15.6
+Johor,2020,lf_outside,823.3
+Kedah,2020,lf_outside,540.5
+Kelantan,2020,lf_outside,495.0
+Melaka,2020,lf_outside,202.4
+Negeri Sembilan,2020,lf_outside,269.9
+Pahang,2020,lf_outside,370.7
+Perak,2020,lf_outside,607.9
+Perlis,2020,lf_outside,57.4
+Pulau Pinang,2020,lf_outside,408.3
+Sabah,2020,lf_outside,799.8
+Sarawak,2020,lf_outside,633.9
+Selangor,2020,lf_outside,1264.1
+Terengganu,2020,lf_outside,309.3
+Kuala Lumpur,2020,lf_outside,341.8
+Labuan,2020,lf_outside,26.1
+Putrajaya,2020,lf_outside,12.6
+Johor,2019,lf_outside,763.4
+Kedah,2019,lf_outside,536.1
+Kelantan,2019,lf_outside,478.8
+Melaka,2019,lf_outside,212.5
+Negeri Sembilan,2019,lf_outside,265.2
+Pahang,2019,lf_outside,371.7
+Perak,2019,lf_outside,605.8
+Perlis,2019,lf_outside,59.7
+Pulau Pinang,2019,lf_outside,419.7
+Sabah,2019,lf_outside,843.6
+Sarawak,2019,lf_outside,585.3
+Selangor,2019,lf_outside,1183.2
+Terengganu,2019,lf_outside,311.9
+Kuala Lumpur,2019,lf_outside,387.7
+Labuan,2019,lf_outside,25.9
+Putrajaya,2019,lf_outside,13.6
+Johor,2018,lf_outside,784.8
+Kedah,2018,lf_outside,528.0
+Kelantan,2018,lf_outside,455.4
+Melaka,2018,lf_outside,208.5
+Negeri Sembilan,2018,lf_outside,250.5
+Pahang,2018,lf_outside,368.6
+Perak,2018,lf_outside,635.9
+Perlis,2018,lf_outside,61.0
+Pulau Pinang,2018,lf_outside,407.6
+Sabah,2018,lf_outside,864.4
+Sarawak,2018,lf_outside,632.3
+Selangor,2018,lf_outside,1176.9
+Terengganu,2018,lf_outside,306.7
+Kuala Lumpur,2018,lf_outside,378.5
+Labuan,2018,lf_outside,21.9
+Putrajaya,2018,lf_outside,12.9
+Johor,2017,lf_outside,816.9
+Kedah,2017,lf_outside,503.5
+Kelantan,2017,lf_outside,442.5
+Melaka,2017,lf_outside,213.7
+Negeri Sembilan,2017,lf_outside,283.6
+Pahang,2017,lf_outside,369.6
+Perak,2017,lf_outside,614.9
+Perlis,2017,lf_outside,68.3
+Pulau Pinang,2017,lf_outside,392.1
+Sabah,2017,lf_outside,868.5
+Sarawak,2017,lf_outside,575.4
+Selangor,2017,lf_outside,1197.7
+Terengganu,2017,lf_outside,291.0
+Kuala Lumpur,2017,lf_outside,420.2
+Labuan,2017,lf_outside,22.7
+Putrajaya,2017,lf_outside,13.3

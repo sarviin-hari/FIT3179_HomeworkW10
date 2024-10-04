@@ -1,0 +1,471 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 800,
+    "height": 400,
+    "projection": {
+      "type": "mercator"    },    
+    "params": [
+      {
+        "name": "Year_selection",
+        "value": 2022,
+        "bind": {
+          "input": "range",
+          "min": 2017,
+          "max": 2022,
+          "step": 1,
+          "name": "Year: "
+        }
+      }
+    ],
+
+    "layer": [
+      
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/sarviin-hari/FIT3179_HomeworkW10/refs/heads/main/Labour-Force-Data-Yearly-Dist.csv"
+        },
+        "transform": [
+          {
+            "lookup": "state",
+            "from": {
+              "data": {
+                "url": "https://raw.githubusercontent.com/sarviin-hari/FIT3179_HomeworkW10/refs/heads/main/malaysia.topojson",
+                "format": {
+                  "type": "topojson",
+                  "feature": "states"
+
+                }
+              },
+              "key": "properties.Name"
+            },
+            "as": "geo"
+          },
+          {"filter": "datum.Year == Year_selection"}
+        ],
+        "mark": {"type": "geoshape", "stroke": "#fff"},
+        "encoding": {
+          "shape": {"field": "geo", "type": "geojson"},
+          "color": {
+            "field": "lf_employed_per_working_population",
+            "type": "quantitative",
+            "title": ["Percentage (%)"],
+            "scale": {
+              "type": "threshold",
+              "domain": [10, 20, 30, 40, 50, 60, 70, 80, 90],
+              "range": [
+                "#d8cbc4", "#bca89f", "#a08679", "#8b6c5c", "#765341",
+                "#6a4a3a", "#5b3e31", "#4c3228", "#3d251e"
+              ]
+            },
+            "legend": {
+              "titleAlign": "center",
+              "titleAnchor": "middle",
+              "titleFontSize": 15,
+              "labelFontSize": 13,
+              "symbolStrokeWidth": 10,
+              "symbolType": "square",
+              "direction": "horizontal", 
+              "orient": "bottom-right"
+
+            }
+          },
+          "tooltip": [
+            {"field": "state", "type": "nominal", "title": "State"},
+            {
+              "field": "lf_employed_per_working_population",
+              "type": "quantitative",
+              "title": "Percentage of Employed Labour Force to Working Population (%)",
+              "format": ".2f"
+            },
+            {"field": "Year", "type": "quantitative", "title": "Year"}
+          ]
+        }
+      },
+  
+      {
+        "data": {
+          "values": [
+
+            {"state": "KL",          "text": [
+              "1.31% decrease in the",
+              "percentage of labour force",
+              "from previous year"
+            ],      "latitude": 3.0526589, "longitude": 104.0022205, "Year": 2022},
+
+
+            {"state": "Sarawak",          "text": [
+              "12.9% increase in the",
+              "percentage of labour force",
+              "from previous year"
+            ],      "latitude": 2.5023855, "longitude": 112.3547283, "Year": 2019},
+            
+            {"state": "Sarawak",          "text": [
+              "Highest percentage of labour",
+              "force compared to all states"
+            ],      "latitude": 2.5023855, "longitude": 112.3547283, "Year": 2022},
+
+            {"state": "Sabah",          "text": [
+              "Highest percentage of labour",
+              "force compared to all states"
+            ],      "latitude": 2.5023855, "longitude": 112.3547283, "Year": 2021},
+
+            
+            {"state": "N9",          "text": [
+              "Highest increase in percentage of",
+              "labour force compared to all states",
+              "by 4.6% from previous year"
+            ],      "latitude": 4.0526589, "longitude": 104.0022205, "Year": 2018},
+
+            {"state": "Selangor",          "text": [
+              "Highest percentage of",
+              "labour compared to all",
+              "states by 70.48%"
+            ],      "latitude": 3.0526589, "longitude": 104.0022205, "Year": 2017},
+
+            
+            {"state": "Sabah",          "text": [
+              "Highest percentage of labour",
+              "force compared to all states",
+              "in all years at 85.83%"
+            ],      "latitude": 5.425735899, "longitude": 106.5326392, "Year": 2020},
+
+
+            {"state": "Kelantan",          "text": [
+              "Significant decrease from",
+              "previoius year due to ",
+              "covid-19 pandemic job loss"
+            ],      "latitude": 5.630743, "longitude": 103.2349297, "Year": 2021}
+
+          ]
+        },
+        "transform": [
+          {"filter": "datum.Year == Year_selection"}
+        ],
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "baseline": "middle",
+          "dx": 5,
+          "fontSize": 13
+        },
+        "encoding": {
+          "longitude": {"field": "longitude", "type": "quantitative"},
+          "latitude": {"field": "latitude", "type": "quantitative"},
+          "text": {"field": "text", "type": "nominal"},
+          "color": {"value": "black"}
+        }
+      },
+      {
+        "data": {
+          "values": [
+            {
+              "latitude": 5.425735899,
+              "longitude": 114.5326392	,
+              "Year": 2020
+
+            },
+            {
+              "latitude": 5.425735899,  
+              "longitude": 111.8326392,
+              "Year": 2020
+
+            }
+          ]
+        },
+        "mark": {
+          "type": "line",
+          "strokeWidth": 2,
+          "color": "black"
+        },
+        "transform": [
+          {"filter": "datum.Year == Year_selection"}
+        ],
+        "encoding": {
+          "longitude": {"field": "longitude", "type": "quantitative"},
+          "latitude": {"field": "latitude", "type": "quantitative"}
+        }
+      },  
+      {
+        "data": {
+          "values": [
+            {
+              "latitude": 3.1526589,
+              "longitude": 101.7022205	,
+              "Year": 2022
+
+            },
+            {
+              "latitude": 3.0526589,  
+              "longitude": 104.0022205,
+              "Year": 2022
+
+            }
+          ]
+        },
+        "mark": {
+          "type": "line",
+          "strokeWidth": 2,
+          "color": "black"
+        },
+        "transform": [
+          {"filter": "datum.Year == Year_selection"}
+        ],
+        "encoding": {
+          "longitude": {"field": "longitude", "type": "quantitative"},
+          "latitude": {"field": "latitude", "type": "quantitative"}
+        }
+      },  
+
+      {
+        "data": {
+          "values": [
+            {
+              "latitude": 3.5083304,
+              "longitude": 101.304146	,
+              "Year": 2017
+
+            },
+            {
+              "latitude": 3.0526589,  
+              "longitude": 104.0022205,
+              "Year": 2017
+
+            }
+          ]
+        },
+        "mark": {
+          "type": "line",
+          "strokeWidth": 2,
+          "color": "black"
+        },
+        "transform": [
+          {"filter": "datum.Year == Year_selection"}
+        ],
+        "encoding": {
+          "longitude": {"field": "longitude", "type": "quantitative"},
+          "latitude": {"field": "latitude", "type": "quantitative"}
+        }
+      },  
+
+
+      {
+        "data": {
+          "values": [
+            {
+              "latitude": 2.731895,
+              "longitude": 102.1925319	,
+              "Year": 2018
+
+            },
+            {
+              "latitude": 3.0526589,  
+              "longitude": 104.0022205,
+              "Year": 2018
+
+            }
+          ]
+        },
+        "mark": {
+          "type": "line",
+          "strokeWidth": 2,
+          "color": "black"
+        },
+        "transform": [
+          {"filter": "datum.Year == Year_selection"}
+        ],
+        "encoding": {
+          "longitude": {"field": "longitude", "type": "quantitative"},
+          "latitude": {"field": "latitude", "type": "quantitative"}
+        }
+      },  
+
+
+
+      {
+        "data": {
+          "values": [
+            {
+              "latitude": 5.630743,
+              "longitude": 103.2349297,
+              "Year": 2021
+
+            },
+            {
+              "latitude": 5.402130199,  
+              "longitude": 102.0635972,
+              "Year": 2021
+
+            }
+          ]
+        },
+        "mark": {
+          "type": "line",
+          "strokeWidth": 2,
+          "color": "black"
+        },
+        "transform": [
+          {"filter": "datum.Year == Year_selection"}
+        ],
+        "encoding": {
+          "longitude": {"field": "longitude", "type": "quantitative"},
+          "latitude": {"field": "latitude", "type": "quantitative"}
+        }
+      },  
+      {
+        "data": {
+          "values": [
+            {
+              "latitude": 5.630743,
+              "longitude": 103.2349297,
+              "Year": 2021
+
+            },
+            {
+              "latitude": 2.731895,  
+              "longitude": 102.1925319,
+              "Year": 2021
+
+            }
+          ]
+        },
+        "mark": {
+          "type": "line",
+          "strokeWidth": 2,
+          "color": "black"
+        },
+        "transform": [
+          {"filter": "datum.Year == Year_selection"}
+        ],
+        "encoding": {
+          "longitude": {"field": "longitude", "type": "quantitative"},
+          "latitude": {"field": "latitude", "type": "quantitative"}
+        }
+      },    
+      {
+        "data": {
+          "values": [
+            {
+              "latitude": 5.630743,
+              "longitude": 103.2349297,
+              "Year": 2021
+
+            },
+            {
+              "latitude": 2.3293744,  
+              "longitude": 102.2880962,
+              "Year": 2021
+
+            }
+          ]
+        },
+        "mark": {
+          "type": "line",
+          "strokeWidth": 2,
+          "color": "black"
+        },
+        "transform": [
+          {"filter": "datum.Year == Year_selection"}
+        ],
+        "encoding": {
+          "longitude": {"field": "longitude", "type": "quantitative"},
+          "latitude": {"field": "latitude", "type": "quantitative"}
+        }
+      },      
+      {
+        "data": {
+          "values": [
+            {
+              "latitude": 2.5023855,
+              "longitude": 112.3547283,
+              "Year": 2019
+
+            },
+            {
+              "latitude": 2.5023855,  
+              "longitude": 110.9547283,
+              "Year": 2019
+
+            }
+          ]
+        },
+        "mark": {
+          "type": "line",
+          "strokeWidth": 2,
+          "color": "black"
+        },
+        "transform": [
+          {"filter": "datum.Year == Year_selection"}
+        ],
+        "encoding": {
+          "longitude": {"field": "longitude", "type": "quantitative"},
+          "latitude": {"field": "latitude", "type": "quantitative"}
+        }
+      },    
+      {
+        "data": {
+          "values": [
+            {
+              "latitude": 2.5023855,
+              "longitude": 112.3547283,
+              "Year": 2022
+
+            },
+            {
+              "latitude": 2.5023855,  
+              "longitude": 110.9547283,
+              "Year": 2022
+
+            }
+          ]
+        },
+        "mark": {
+          "type": "line",
+          "strokeWidth": 2,
+          "color": "black"
+        },
+        "transform": [
+          {"filter": "datum.Year == Year_selection"}
+        ],
+        "encoding": {
+          "longitude": {"field": "longitude", "type": "quantitative"},
+          "latitude": {"field": "latitude", "type": "quantitative"}
+        }
+      },    
+      {
+        "data": {
+          "values": [
+            {
+              "latitude": 2.7023855,
+              "longitude": 114.6547283,
+              "Year": 2021
+
+            },
+            {
+              "latitude": 5.425735899,  
+              "longitude": 114.5326392,
+              "Year": 2021
+
+            }
+          ]
+        },
+        "mark": {
+          "type": "line",
+          "strokeWidth": 2,
+          "color": "black"
+        },
+        "transform": [
+          {"filter": "datum.Year == Year_selection"}
+        ],
+        "encoding": {
+          "longitude": {"field": "longitude", "type": "quantitative"},
+          "latitude": {"field": "latitude", "type": "quantitative"}
+        }
+      }  
+    
+    ],
+    "config": {
+
+    }  
+  
+  }
+  

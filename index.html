@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+
+    <!-- Import pure.css -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+    integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- CSS file -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+
+
+  <script src="vega_lite_vis.js"></script>
+
+  <title>Map of Percentage of Employed Labour Force to Population for each State in Malaysia</title>
+</head>
+
+<body>
+  <div class="page">
+
+
+    
+    <h1>Labour Force in Malaysia</h1>
+    
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-2">
+        <div class="description description-left">
+          <h2>Graph of Employment Status of Working Population</h2>
+          <p>The graph shows the employment distribution from 2017 to 2022 across three categories: employed, unemployed and outside the labor force. The majority of the population is employed (blue), with relatively stable employment rates over the years. A smaller portion of the population is outside the labor force (purple) or unemployed (yellow), with minimal variations observed in these categories across the years. Overall, employment remains the dominant status, while unemployment is consistently low.</p>
+        </div>
+      </div>
+      <div class="pure-u-1-2">
+        <div id="stacked_bar" class="vis-container"></div>
+      </div>
+    </div>
+
+
+    <h2>Map of Percentage of Employed Labour Force to Population for each State in Malaysia</h2>
+    <div id="map_projection" style="text-align: center;">
+    </div>
+
+    <br>
+
+
+        <p>The graph shows the percentage of employed labor force to the working population across Malaysian states from 2017 to 2022. Overall, states like Selangor, Pulau Pinang, and Sabah consistently report high employment percentages, often exceeding 70%, with Sabah peaking at 85.83% in 2020. In contrast, states like Putrajaya and Perlis consistently show lower employment percentages, with Putrajaya recording the lowest at 50.35% in 2021. The general trend across most states shows stable or slightly improving employment rates over the years, with minimal fluctuations. A map-based visualization would effectively highlight these regional differences and trends, allowing for a clear understanding of employment distribution across Malaysia during this period.
+
+          
+        </p>
+    </div>
+
+
+
+</body>
+
+<br>
+
+
+
+</html>
+
+
+
+
+
+

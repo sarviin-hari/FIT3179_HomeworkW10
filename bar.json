@@ -2,8 +2,13 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": 250,
     "height": 300,
-    "data": {"url": "https://raw.githubusercontent.com/sarviin-hari/FIT3179_HomeworkW10/refs/heads/main/stack_bar.csv"},
-    
+    "data": {"url": "https://raw.githubusercontent.com/sarviin-hari/FIT3179_HomeworkW10/refs/heads/main/bar_bar.csv"},
+    "transform": [
+        {
+          "calculate": "toNumber(datum.value)", 
+          "as": "numeric_value" 
+        }
+      ],
     "layer": [
       {
         "mark": "bar",
@@ -19,7 +24,7 @@
           },
           "y": {
             "title": "Number of people ('000s)",
-            "field": "value",
+            "field": "numeric_value",
             "type": "quantitative",
             "axis": {
               "labelFontSize": 14,
@@ -84,7 +89,7 @@
           "type": "text",
           "align": "center",
           "dy": -90,
-          "dx": 120,
+          "dx": 125,
           "fontSize": 13        },
         "encoding": {
           "x": {"field": "Year", "type": "ordinal"},
@@ -103,9 +108,9 @@
           "color": "black"
         }, 
         "encoding": {
-            "y": {"value": 125},  
+            "y": {"value": 50},  
             "x": {"value": 260} ,
-            "y2": {"value": 25},  
+            "y2": {"value": 10},  
           "x2": {"value": 225} 
         },
         "transform": [
@@ -118,7 +123,7 @@
         "mark": {
           "type": "text",
           "align": "center",
-          "dy": -125,
+          "dy": -50,
           "dx":75,
           "fontSize": 13        },
         "encoding": {
@@ -132,6 +137,8 @@
           {"filter": "datum.category == 'lf_employed'"}
         ]
       }
-    ]
+    ],
+    "config": {"view": {"stroke": null}}
+
   }
   

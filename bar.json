@@ -61,8 +61,15 @@
             "title": ["Employment status"]
           },
           "tooltip": [
-            {"field": "category", "title": "Category"},
-            {"field": "value", "title": "Number of people ('000s)"},
+            {
+              "field": "category",
+              "title": "Category",
+              "type": "nominal",
+              "value": {
+                "signal": "datum.category === 'lf_employed' ? 'Employed' : datum.category === 'lf_outside' ? 'Outside Labour' : 'Unemployed'"
+              }
+            },
+                      {"field": "value", "title": "Number of people ('000s)"},
             {"field": "Year", "title": "Year"}
           ]
         }

@@ -1,0 +1,137 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 250,
+    "height": 300,
+    "data": {"url": "https://raw.githubusercontent.com/sarviin-hari/FIT3179_HomeworkW10/refs/heads/main/stack_bar.csv"},
+    
+    "layer": [
+      {
+        "mark": "bar",
+        "encoding": {
+          "x": {
+            "field": "Year",
+            "type": "ordinal",
+            "title": "Year",
+            "axis": {
+              "labelFontSize": 14,
+              "titleFontSize": 16   
+            }
+          },
+          "y": {
+            "title": "Number of people ('000s)",
+            "field": "value",
+            "type": "quantitative",
+            "axis": {
+              "labelFontSize": 14,
+              "titleFontSize": 16   
+            }
+          },
+          "color": {
+            "field": "category",
+            "type": "nominal",
+            "scale": {
+              "domain": ["lf_unemployed", "lf_outside", "lf_employed"],
+              "range": ["#e7ba52", "#9467bd", "#1f77b4"]
+            },
+            "legend": {
+                "titleAlign": "center",
+                "titleAnchor": "middle",
+                "titleFontSize": 15,
+                "labelFontSize": 13,
+                "direction": "horizontal", 
+                "orient": "top",
+                "legendX":500,
+
+                "encode": {
+                    "labels": {
+                      "update": {
+                        "text": {
+                          "signal": "datum.value === 'lf_employed' ? 'Employed' : datum.value === 'lf_outside' ? 'Outside Labour' : 'Unemployed'"
+                        }
+                      }
+                    }
+                  }
+  
+              },
+            "title": ["Employment status"]
+          },
+          "tooltip": [
+            {"field": "category", "title": "Category"},
+            {"field": "value", "title": "Number of people ('000s)"},
+            {"field": "Year", "title": "Year"}
+          ]
+        }
+      },
+      {
+        "mark": {
+          "type": "rule",
+          "color": "black"
+        },
+        "encoding": {
+          "x": {"field": "Year", "type": "ordinal"},
+          "y": {"field": "value", "type": "quantitative"},
+          "y2": {"value": 250}, 
+          "x2": {"value": 250} 
+        },
+        "transform": [
+          {"filter": "datum.Year == '2021'"},
+          {"filter": "datum.category == 'lf_unemployed'"}
+        ]
+      },
+  
+      {
+        "mark": {
+          "type": "text",
+          "align": "center",
+          "dy": -90,
+          "dx": 120,
+          "fontSize": 13        },
+        "encoding": {
+          "x": {"field": "Year", "type": "ordinal"},
+          "y": {"aggregate": "max", "field": "value", "type": "quantitative"},
+          "text": {"value": ["More Unemployment", "in 2021 due to", "COVID-19 Impact"]},
+           "color": {"value": "black"}
+        },
+        "transform": [
+          {"filter": "datum.Year == '2021'"},
+          {"filter": "datum.category == 'lf_unemployed'"}
+        ]
+      },
+      {
+        "mark": {
+          "type": "rule",
+          "color": "black"
+        }, 
+        "encoding": {
+            "y": {"value": 125},  
+            "x": {"value": 260} ,
+            "y2": {"value": 25},  
+          "x2": {"value": 225} 
+        },
+        "transform": [
+          {"filter": "datum.Year == '2022'"},
+          {"filter": "datum.category == 'lf_employed'"}
+        ]
+      }, 
+  
+      {
+        "mark": {
+          "type": "text",
+          "align": "center",
+          "dy": -125,
+          "dx":75,
+          "fontSize": 13        },
+        "encoding": {
+          "x": {"field": "Year", "type": "ordinal"},
+          "y": {"aggregate": "max", "field": "value", "type": "quantitative"},
+          "text": {"value": ["More Working", "Class People", "in 2022"]},
+           "color": {"value": "black"}
+        },
+        "transform": [
+          {"filter": "datum.Year == '2022'"},
+          {"filter": "datum.category == 'lf_employed'"}
+        ]
+      }
+    ]
+  }
+  
